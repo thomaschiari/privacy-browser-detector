@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Detector de Privacidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 320px;
+            margin: 0;
+            padding: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+        th, td {
+            padding: 8px 5px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 5px;
+            border-radius: 3px;
+            overflow-x: auto;
+            max-width: 100%;
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        #resultTable {
+            margin-top: 10px;
+        }
+        .good-privacy {
+            color: green;
+        }
+        .medium-privacy {
+            color: orange;
+        }
+        .poor-privacy {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="thirdPartyBtn">Domínios de Terceira Parte</button>
+    <button id="localStorageBtn">Armazenamento Local</button>
+    <button id="cookiesBtn">Cookies</button>
+    <button id="canvasBtn">Canvas Fingerprinting</button>
+    <button id="hijackingBtn">Verificar Hijacking</button>
+    <button id="privacyScoreBtn">Pontuação de Privacidade</button>
+    <table id="resultTable">
+
+    </table>
+    <script src="popup.js"></script>
+</body>
+</html>
